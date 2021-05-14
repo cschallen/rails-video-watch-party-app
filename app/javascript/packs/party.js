@@ -21,7 +21,8 @@ export default class Party {
         self.session.subscribe(event.stream, 'subscribers', {
           insertMode: 'append',
           width: "100%",
-          height: "100%"
+          height: "100%",
+          subscribeToAudio: false,
         }, function(error) {
           if (error) {
             console.error('Failed to subscribe', error);
