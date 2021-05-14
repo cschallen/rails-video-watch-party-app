@@ -5,7 +5,7 @@
     <p><%= @name_form_text %></p>
     <%= form_with(url: "/name", method: "post") do %>
       <%= text_field_tag 'name', nil, :placeholder => @name_placeholder_text %>
-      <%= submit_tag @name_form_submit_button_text %>
+      <%= submit_tag @name_form_submit_button_text, class: 'btn-grad' %>
       <% flash.each do |type, msg| %>
         <p class="error"><%= msg %></p>
       <% end %>

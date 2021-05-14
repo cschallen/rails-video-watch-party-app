@@ -4,8 +4,8 @@ landing_page:
   welcome_message:
     text: 'Bem vindo a G Party do Hackday!'
   name_form:
-    text: 'Qual seu nome e a senha dessa sala?' 
-    name_placeholder_text: Nome   
+    text: 'Informe o seu nome?'
+    name_placeholder_text: Nome
     password_placeholder_text: Senha da sala
     submit_button_text: Enviar
 navbar:
@@ -14,4 +14,3 @@ navbar:
 text_chat:
   submit_button_text: Enviar
   placeholder_text: 'Insira sua mensagem aqui'
-
