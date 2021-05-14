@@ -7,10 +7,10 @@ landing_page:
     text: 'Insira seu nome para participar da transmissão!'
     name_placeholder_text: Nome
     password_placeholder_text: Senha da sala
-    submit_button_text: Enviar
+    submit_button_text: Entrar
 navbar:
   title:
     text: G Party Hackday
 text_chat:
-  submit_button_text: Entrar
+  submit_button_text: Enviar
   placeholder_text: 'Insira sua mensagem aqui'
