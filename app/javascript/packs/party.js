@@ -33,14 +33,14 @@ export default class Party {
       // This function runs whenever a client connects to a session
       connectionCreated: function(event) {
         self.connectionCount++;
-        self.participantCount.textContent = `${self.connectionCount} Participants`;
+        self.participantCount.textContent = `${self.connectionCount} Participante`;
         streamLayout(self.subscribers, self.connectionCount);
       },
 
       // This function runs whenever a client disconnects from the session
       connectionDestroyed: function(event) {
         self.connectionCount--;
-        self.participantCount.textContent = `${self.connectionCount} Participants`;
+        self.participantCount.textContent = `${self.connectionCount} Participantes`;
         streamLayout(self.subscribers, self.connectionCount);
       }
     });
