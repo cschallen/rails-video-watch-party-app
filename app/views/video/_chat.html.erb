@@ -19,7 +19,7 @@
             me: me
         });
 
-        var conversation = window.talkSession.getOrCreateConversation("hello_world");
+        var conversation = window.talkSession.getOrCreateConversation('<%= @session_id %>');
         conversation.setParticipant(me);
         conversation.setAttributes({
             photoUrl: "https://play-lh.googleusercontent.com/N-JyvZjqZhnvydN9Q7Hbzwh6aAQmvnAmf1TjlvqHpCnvVl5zwSU7jlJH0uLFpNiRFw",
