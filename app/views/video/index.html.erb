@@ -1,6 +1,4 @@
 <script type ="text/javascript">
-  console.log('<%= @token %>')
-  console.log('<%= @name %>')
   var token = '<%= @token %>';
   var name = '<%= @name %>';
   var moderator_env_name = '<%= @moderator_name %>';
@@ -26,7 +24,6 @@
     <div class="subscriber" id="subscribers"></div> 
   </div>
 
-  <%# TODO: Chat precisa ser renderizado ao lado do vídeo %>
   <%= render partial: 'chat' %>
 </main>
 
