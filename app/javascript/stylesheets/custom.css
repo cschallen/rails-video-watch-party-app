@@ -2,8 +2,7 @@
   --main: #343a40;
   --txt-alt: white;
   --txt: black;
-  --background: white;
-  --bgImage: url('~images/01.png');
+  --background: black;
 }
 
 html {
@@ -24,8 +23,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--background);
-  background-image: var(--bgImage);
   overflow: hidden;
+  color: white;
+  font-family: 'Comfortaa', cursive;
 }
  
 main {
@@ -55,6 +55,22 @@ input[type="submit"] {
   margin: auto;
   text-align: center;
   font-size: 125%;
+}
+
+.main-logo {
+  padding: 1.5em 0;
+}
+
+.header-logo {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 35%;
+}
+
+.header-logo__img {
+  width: 13%;
+  padding: 10px;
 }
 
 .landing form {

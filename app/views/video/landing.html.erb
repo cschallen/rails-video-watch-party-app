@@ -1,5 +1,6 @@
 <main>
   <div class="landing">
+    <img class="main-logo" src=<%= ENV['LOGO_PATH']%>  width="300px"/>
     <h1><%= @welcome_message %></h1>
     <p><%= @name_form_text %></p>
     <%= form_with(url: "/name", method: "post") do %>
