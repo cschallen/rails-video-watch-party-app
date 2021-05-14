@@ -4,9 +4,6 @@
   --txt: black;
   --background: white;
   --bgImage: url('~images/01.png');
-  --chat-bg: rgba(255, 255, 255, 0.75);
-  --chat-mine: darkgreen;
-  --chat-theirs: indigo;
 }
 
 html {
@@ -90,47 +87,6 @@ header {
   justify-content: space-between;
 }
 
-.chat {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: var(--chat-bg);
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-}
-
-.chat.active {
-  transform: translateX(0);
-}
-
-.chat-header {
-  padding: 0.5em;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn-chat {
-  height: 5em;
-  width: 5em;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2), 0 3px 6px 0 rgba(0, 0, 0, .19);
-  position: fixed;
-  right: 1em;
-  bottom: 1em;
-  cursor: pointer;
-}
-
-.btn-chat svg {
-  height: 4em;
-  width: 2.5em;
-}
-
 .btn-close {
   height: 2em;
   width: 2em;
@@ -156,34 +112,6 @@ header {
 
 .messages p {
   margin-bottom: 0.5em;
-}
-
-.mine {
-  color: var(--chat-mine);
-}
-
-.theirs {
-  color: var(--chat-theirs);
-}
-
-.chat form {
-  display: flex;
-  padding: 1em;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-}
-
-.chat input[type="text"] {
-  flex: 1;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: var(--background);
-  color: var(--txt);
-  min-width: 0;
-}
-
-.chat input[type="submit"] {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 .videos {
@@ -231,14 +159,11 @@ header {
 
 .dark {
   --background: black;
-  --chat-mine: lime;
-  --chat-theirs: violet;
   --txt: white;
 }
 
-@media screen and (min-aspect-ratio: 1 / 1) {
-  .chat {
-    width: 20%;
-    min-width: 16em;
-  }
+#talkjs-container {
+  width: 30% !important;
+  height: 100% !important;
+  margin: 0 !important;
 }

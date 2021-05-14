@@ -26,7 +26,11 @@
             subject: "Chat da Globo"
         });
 
-        var chatbox = talkSession.createChatbox(conversation);
+        var chatbox = talkSession.createChatbox(conversation, {
+            // Don't use the default header provided by TalkJS
+            showChatHeader: false,
+            height: '100%'
+        });
         chatbox.mount(document.getElementById("talkjs-container"));
     });
 </script>
