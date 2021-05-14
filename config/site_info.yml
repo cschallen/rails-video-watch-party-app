@@ -4,7 +4,7 @@ landing_page:
   welcome_message:
     text: 'Bem vindo a G Party do Hackday!'
   name_form:
-    text: 'Qual seu nome e a senha dessa sala?' 
+    text: 'Insira seu nome para participar da transmissão!' 
     name_placeholder_text: Nome   
     password_placeholder_text: Senha da sala
     submit_button_text: Enviar
