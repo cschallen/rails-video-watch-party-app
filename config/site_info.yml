@@ -12,5 +12,5 @@ navbar:
   title:
     text: G Party Hackday
 text_chat:
-  submit_button_text: Enviar
+  submit_button_text: Entrar
   placeholder_text: 'Insira sua mensagem aqui'
