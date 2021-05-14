@@ -6,39 +6,15 @@ export default class Party {
     this.watchLink = document.getElementById("watch-mode");
     this.subscribers = document.getElementById("subscribers");
     this.participantCount = document.getElementById("participant-count");
-    this.videoPublisher = this.setupVideoPublisher();
     this.clickStatus = 'off';
     this.setupEventHandlers();
     this.connectionCount = 0;
     setButtonDisplay(this.watchLink);
   }
 
-  setupVideoPublisher() {
-    return OT.initPublisher('publisher', {
-      insertMode: 'append',
-      width: "100%",
-      height: "100%"
-    }, function(error) {
-      if (error) {
-        console.error('Failed to initialise publisher', error);
-      };
-    });
-  }
-
   setupEventHandlers() {
     let self = this;
     this.session.on({
-      // This function runs when session.connect() asynchronously completes
-      sessionConnected: function(event) {
-        // Publish the publisher we initialzed earlier (this will trigger 'streamCreated' on other
-        // clients)
-        self.session.publish(self.videoPublisher, function(error) {
-          if (error) {
-            console.error('Failed to publish', error);
-          }
-        });
-      },
-
       // This function runs when another client publishes a stream (eg. session.publish())
       streamCreated: function(event) {
         // Subscribe to the stream that caused this event, and place it into the element with id="subscribers"
