@@ -18,7 +18,6 @@ export default class Screenshare {
 
   shareScreen() {
     this.setupPublisher();
-    this.setupAudioPublisher();
     this.setupClickStatus();
   }
 
@@ -33,26 +32,6 @@ export default class Screenshare {
         screenshareMode(self.session, 'off');
       };
     });
-  }
-
-  setupAudioPublisher() {
-    var self = this;
-    var audioPublishOptions = {};
-    audioPublishOptions.insertMode = 'append';
-    audioPublishOptions.publishVideo = false;
-    var audio_publisher = OT.initPublisher('audio', audioPublishOptions,
-      function(error) {
-        if (error) {
-          console.log(error);
-        } else {
-          self.session.publish(audio_publisher, function(error) {
-            if (error) {
-              console.log(error);
-            }
-          });
-        };
-      }
-    );
   }
 
   setupPublisher() {
