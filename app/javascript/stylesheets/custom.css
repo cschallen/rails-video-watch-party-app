@@ -25,7 +25,7 @@ body {
   background-color: var(--background);
   overflow: hidden;
   color: white;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa';
 }
 
 main {
