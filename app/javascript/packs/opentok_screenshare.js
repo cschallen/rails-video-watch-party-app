@@ -1,5 +1,4 @@
 import Screenshare from './screenshare.js'
-import Chat from './chat.js'
 
 // declare empty global session variable
 var session = ''
@@ -13,7 +12,6 @@ if (window.location.pathname == '/screenshare') {
 
     // Hide or show watch party link based on participant
     if (name != '' && window.location.pathname == '/screenshare') {
-      new Chat(session);
       new Screenshare(session, name).toggle();
 
       // Connect to the Session using a 'token'

@@ -1,4 +1,3 @@
-import Chat from './chat.js'
 import Party from './party.js'
 
 // declare empty global session variable
@@ -14,7 +13,6 @@ if (window.location.pathname == '/party') {
         session = OT.initSession(api_key, session_id);
       }
 
-      new Chat(session);
       new Party(session);
 
       // Connect to the Session using a 'token'
