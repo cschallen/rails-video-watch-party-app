@@ -22,12 +22,7 @@ class VideoController < ApplicationController
   def landing; end
 
   def name
-    @name = name_params[:name]
-    if name_params[:password] == ENV['PARTY_PASSWORD']
-      redirect_to party_url(name: @name)
-    else
-      redirect_to('/', flash: { error: 'Incorrect password' })
-    end
+    redirect_to party_url(name: name_params[:name])
   end
 
   def index; end
